@@ -5,13 +5,13 @@ project(SCVP_Artifacts)
 find_library(SYSTEMC_LIBRARY 
     NAMES systemc
     #PATHS /opt/systemc/lib-macosx64/ # Uncomment for macOS
-    PATHS $ENV{SYSTEMC_HOME}/lib-$ENV{SYSTEMC_TARGET_ARCH}/
+    PATHS $ENV{SYSTEMC_HOME}/lib64/
 )
 
 find_library(SYSTEMC_AMS_LIBRARY 
     NAMES systemc-ams
     #PATHS /opt/systemc-ams/lib-macosx64/ # Uncomment for macOS
-    PATHS $ENV{SYSTEMC_AMS_HOME}/lib-$ENV{SYSTEMC_TARGET_ARCH}/
+    PATHS $ENV{SYSTEMC_AMS_HOME}/lib/
 )
 
 set(SYSTEMC_INCLUDE $ENV{SYSTEMC_HOME}/include)
